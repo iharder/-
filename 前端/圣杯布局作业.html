@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	/*此处写代码*/
+
+	* {
+		padding: 0;
+		margin: 0;
+		font-family: '微软雅黑';
+	}
+
+	body {
+		min-width: 1000px;
+	}
+
+	.nav {
+		height: 100px;
+		width: 100%;
+		background: black;
+		position: fixed;
+		top: 0;
+		overflow: hidden;
+		zoom: 1;
+		z-index: 9;
+	}
+
+	.logo {
+		height: 100px;
+		background: url("http://climg.mukewang.com/58c0d2d900016ce303000100.png") center center no-repeat;
+		width: 300px;
+		background-size: 80% 80%;
+		float: left;
+	}
+
+	.nav_itr {
+		height: 100px;
+		width: auto;
+	}
+
+	.nav_itr ul {
+		float: right;
+		color: #f5f5f5;
+	}
+
+	.nav_itr li {
+		display: inline;
+		height: 100px;
+		line-height: 100px;
+		font-size: 20px;
+		margin-right: 40px;
+		cursor: pointer;
+	}
+
+	.nav_itr li:hover {
+		color: orange;
+	}
+
+	.main {
+		height: 800px;
+		margin: 100px 0;
+		padding: 0 600px 0 400px;
+	}
+
+	.middle,
+	.sub,
+	.input {
+		position: relative;
+	}
+
+	.middle {
+		float: left;
+		height: 800px;
+		width: 100%;
+		background-color: #fff0f5;
+	}
+
+	.mid {
+		position: relative;
+		background: url(http://climg.mukewang.com/590037e00001fab706000400.jpg) no-repeat;
+		height: 40%;
+		width: 50%;
+		margin: 0 auto;
+		top: 100px;
+		background-size: 100% 100%;
+	}
+
+	.sub {
+		background-color: #ffe4b5;
+		float: left;
+		margin-left: -100%;
+		right: 400px;
+		min-width: 400px;
+	}
+
+	.input {
+		float: left;
+		background-color: #87cefa;
+		margin-left: -600px;
+		left: 600px;
+		min-width: 600px;
+	}
+
+	.username {
+		width: 80%;
+		height: 700px;
+		float: right;
+		margin-top: 100px;
+	}
+
+	.username input {
+		width: 400px;
+		height: 50px;
+		font-size: 20px;
+		text-indent: 0.5em;
+	}
+
+	.button {
+		background-color: red;
+		color: white;
+	}
+
+	.info {
+		margin-top: 100px;
+		height: 700px;
+		float: left;
+		padding-left: 50px;
+	}
+
+
+	h1 {
+		font-weight: normal;
+	}
+
+	.pink {
+		background-color: pink;
+	}
+
+	.footer {
+		height: 100px;
+		width: 100%;
+		background: black;
+		position: fixed;
+		bottom: 0;
+		color: gray;
+		text-align: center;
+	}
+
+	.footer ul {
+		height: 100px;
+		width: auto;
+	}
+
+	.footer li {
+		display: inline-block;
+		height: 100px;
+		line-height: 100px;
+		width: 80px;
+		font-size: 17px;
+		cursor: pointer;
+	}
+	</style>
+</head>
+
+<body>
+	<!-- 此处写代码 -->
+	<div class="nav">
+		<div class="logo"></div>
+		<div class="nav_itr">
+			<ul>
+				<li>课程</li>
+				<li>职业路径</li>
+				<li>实战</li>
+				<li>猿问</li>
+				<li>手记</li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="middle">
+			<div class="mid"></div>
+		</div>
+		<div class="sub">
+			<div class="info">
+				<h1>课程推荐</h1>
+				<br/>
+				<span class="pink">职业路径</span>&nbsp; <span>HTML5与CSS3实现动态网页</span>
+				<br/>
+				<br/>
+				<span class="pink">职业路径</span>&nbsp; <span>零基础入门Android语法与界面</span>
+				<br/>
+				<br/>
+				<span class="pink">职业路径</span>&nbsp; <span>iOS基础语法与常用控件</span>
+				<br/>
+				<br/>
+				<span class="pink">职业路径</span>&nbsp; <span>PHP入门开发</span>
+				<br/>
+				<br/>
+				<span class="pink">职业路径</span>&nbsp; <span>JAVA入门开发</span>
+				<br/>
+				<br/>
+			</div>
+		</div>
+		<div class="input">
+			<div class="username">
+				<h1>登录</h1>
+				<br/>
+				<input type="text" placeholder=" 请输入登录邮箱/手机号" />
+				<br/>
+				<br/>
+				<input type="text" placeholder=" 6-10位密码，区分大小写，不能用空格" />
+				<br/>
+				<br/>
+				<input class="button" type="button" value="登录" />
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<ul>
+			<li>网站首页</li>
+			<li>企业合作</li>
+			<li>人才招聘</li>
+			<li>联系我们</li>
+			<li>常见问题</li>
+			<li>友情链接</li>
+		</ul>
+	</div>
+</body>
+
+</html>

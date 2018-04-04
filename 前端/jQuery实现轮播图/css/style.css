@@ -1,0 +1,28 @@
+* { font-family: '微软雅黑'; }
+
+/* 标题 */
+.title { margin-top: 50px; text-align: center; font-size: 30px; }
+
+/* 主体 */
+.main { height: 460px; width: 1200px; margin: 50px auto; border: 6px solid gray; position: relative; overflow: hidden }
+
+/* 轮播图 */
+.main > .banner { height: 460px; width: 1200px; overflow: hidden; }
+.main > .banner > .banner-slide { height: 460px; width: 1200px; float: left; display: none; background-repeat: no-repeat; }
+.main > .banner > .slide-active { display: block; }
+.main > .banner > .slide1 { background-image: url(../img/1.jpg); }
+.main > .banner > .slide2 { background-image: url(../img/2.jpg); }
+.main > .banner > .slide3 { background-image: url(../img/3.jpg); }
+.main > .banner > .slide4 { background-image: url(../img/4.jpg); }
+.main > .banner > .slide5 { background-image: url(../img/5.jpg); }
+
+/* 按钮 */
+.button { height: 78px; width: 40px; position: absolute; top: 50%; margin-top: -39px; color: white; background: center center no-repeat; }
+.button:hover { background-color: #333; opacity: 0.8; }
+.prev { background-image: url(../img/pre2.png); left: 5px; }
+.next { background-image: url(../img/pre.png); right: 5px; }
+
+/* 按点 */
+.dots { position: absolute; bottom: 24px; right: 0; text-align: right; padding-right: 24px; line-height: 12px; }
+.dots > span { height: 12px; width: 12px; border-radius: 50%; display: inline-block; margin-left: 8px; background-color: rgba(7, 17, 27, 0.4); box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8) inset; cursor: pointer; }
+.dots > span.dots-active { background-color: rgba(255, 255, 255, 0.8); box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset; }
